@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<html>
+  <head>
+    <title>Enlight India</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:400,300,700" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"/>
+    <script type="text/javascript">
+         function moveTo(contentArea){
+            var goPosition = $(contentArea).offset().top - 80;
+            $('html,body').animate({ scrollTop: goPosition}, 'slow');
+        }
+   </script>
+  </head>
+  <body>
+    <div id="header">
+    </div>
+    <section class="topBar" id="top">
+      <div class="container">
+      <nav class="mainMenu">
+        <ul id="menu">
+          <li class="active">
+            <a href="#header">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#events">EVENTS</a>
+          </li>
+          <li>
+            <a href="#donate">DONATE</a>
+          </li>
+          <li>
+            <a href="#volunteer">VOLUNTEER</a>
+          </li>
+          <li>
+            <a href="#getintouch">GET IN TOUCH</a>
+          </li>
+        </ul>
+      </nav>
+      <select size="1" id="subMenu" name="subMenu" onchange="moveTo(this.value)">
+        <option selected="selected" value="">Menu</option>
+        <option value="#up">- Top</option>
+        <option value="#works">- Works</option>
+        <option value="#services">- Services</option>
+        <option value="#portfolio">- Gallery</option>
+        <option value="#blog">- Blog</option>
+        <option value="#contact">- Contact</option>
+        </div>
+      </select>
+    </section>
+  </body>
+</html>

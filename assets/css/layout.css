@@ -1,0 +1,61 @@
+/* Top bar 
+*/
+.container{
+    position: relative;
+    width: 960px;
+    margin: 0px auto;
+    padding:0px;
+}
+
+.topBar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top:0;
+}
+
+.topBar{
+    height: 90px;
+    border-bottom: 1px solid #c8c8c8;
+}
+.topBar h1{
+    display: inline-block;
+    float:left;
+    line-height:28px;
+    margin-top: 28px;
+}
+nav.mainMenu{
+    display: inline;
+    margin-top: 35px;
+    float:right;
+}
+nav.mainMenu ul li{
+    display: inline-block;
+    float:left;
+    margin-left:10px;
+}
+nav.mainMenu ul li a{
+    -webkit-transition:color 0.2s ease-in;  
+    -moz-transition:color 0.2s ease-in;  
+    -o-transition:color 0.2s ease-in;  
+    transition:color 0.2s ease-in;
+    font-family: "Oswald", "Times New Roman", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:#b7b5b5;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav.mainMenu ul li a:hover,nav.mainMenu ul li.active a{
+    color:#cc6600;
+}
+#subMenu{
+    padding:4px;
+    display: none;
+    opacity: 0;
+}
+#subMenu option{
+    padding-left:5px;
+}
+
+/* ==== */
